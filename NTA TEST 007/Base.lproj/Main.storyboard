@@ -1,26 +1,206 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ya4-Zf-Qf4">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Thermostat Table View Controller-->
+        <scene sceneID="Z1l-UK-oBt">
+            <objects>
+                <tableViewController id="Ya4-Zf-Qf4" customClass="ThermostatTableViewController" customModule="NTA_TEST_007" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="b83-3O-91v">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.65404739970000003" blue="0.23607229800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="QIA-HB-SBH" customClass="ThermostatTableViewCell" customModule="NTA_TEST_007" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QIA-HB-SBH" id="I5A-HN-uDI">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TiN-XH-see">
+                                            <rect key="frame" x="0.0" y="0.0" width="109" height="89"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeviceName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYo-yo-oPH">
+                                            <rect key="frame" x="117" y="8" width="159" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeviceHumidity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOs-BD-AhS">
+                                            <rect key="frame" x="117" y="60" width="159" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DeviceTemp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LUG-b9-Re3">
+                                            <rect key="frame" x="117" y="34" width="159" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="NameLabel" destination="kYo-yo-oPH" id="UOn-7t-wPJ"/>
+                                    <outlet property="humidityLabel" destination="TOs-BD-AhS" id="L7Q-Xa-Heh"/>
+                                    <outlet property="iconImageView" destination="TiN-XH-see" id="26V-Su-Aq3"/>
+                                    <outlet property="tempLabel" destination="LUG-b9-Re3" id="K7I-ik-eMs"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ya4-Zf-Qf4" id="UCy-wc-EVH"/>
+                            <outlet property="delegate" destination="Ya4-Zf-Qf4" id="W4l-SI-dew"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQZ-hz-Vhi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-900" y="60"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <tapGestureRecognizer id="fYY-9h-vWk">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibarary:" destination="BYZ-38-t0r" id="CJO-CQ-z3J"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NTA_TEST_007" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="U61-Bx-4zB">
+                                <rect key="frame" x="20" y="68" width="374" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THERMOSTAT NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sj-rq-VN4">
+                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="20.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter thermostat name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GL-T0-gIL">
+                                        <rect key="frame" x="0.0" y="20.333333333333332" width="200" height="29.999999999999996"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="wa4-Ij-s4Q"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="2GL-T0-gIL" secondAttribute="trailing" id="jeo-iq-FYQ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="71h-sj-3vw">
+                                <rect key="frame" x="20" y="136" width="200" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THERMOSTAT ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKQ-Cj-K0g">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="0AD-cw-RMN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter thermostat ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vuj-Jo-qyK">
+                                        <rect key="frame" x="0.0" y="20" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="VQ6-TH-9d7"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vuj-Jo-qyK" secondAttribute="trailing" id="Jun-Ty-QNp"/>
+                                    <constraint firstItem="Vuj-Jo-qyK" firstAttribute="top" secondItem="71h-sj-3vw" secondAttribute="top" constant="20" symbolic="YES" id="o8k-T2-Gk9"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REGISTER NEW THERMOSTAT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbW-Mv-exS">
+                                <rect key="frame" x="83" y="20" width="249" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNM-A8-SIg">
+                                <rect key="frame" x="20" y="265" width="125" height="30"/>
+                                <state key="normal" title="Submit Info"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4Hl-Qg-40N">
+                                <rect key="frame" x="20" y="207" width="200" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THERMOSTAT LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usv-fJ-ybs">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="180" id="JhG-DI-6av"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter thermostat label" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gAE-wd-Z3Z">
+                                        <rect key="frame" x="0.0" y="20" width="200" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="eCh-zW-YDp"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.65404739969588355" blue="0.23607229803413021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="U61-Bx-4zB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5Ms-kx-3cQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U61-Bx-4zB" secondAttribute="trailing" id="EqZ-sd-9Ly"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="U61-Bx-4zB" secondAttribute="leading" id="GOg-Fx-Biz"/>
+                            <constraint firstItem="JNM-A8-SIg" firstAttribute="top" secondItem="4Hl-Qg-40N" secondAttribute="bottom" constant="8" symbolic="YES" id="Jj1-6Q-Hzd"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="71h-sj-3vw" secondAttribute="leading" id="Nxb-nG-THQ"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="JNM-A8-SIg" secondAttribute="leading" id="QVA-Hj-2uR"/>
+                            <constraint firstAttribute="bottom" secondItem="4Hl-Qg-40N" secondAttribute="bottom" constant="479" id="Z6j-yd-CGr"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="top" secondItem="71h-sj-3vw" secondAttribute="bottom" constant="21" id="g6y-Me-VDx"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="207" id="je5-nX-0Kz"/>
+                            <constraint firstAttribute="trailing" secondItem="4Hl-Qg-40N" secondAttribute="trailing" constant="230" id="nlX-cf-myv"/>
+                            <constraint firstItem="U61-Bx-4zB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wPq-vR-h2U"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ThermoNameLabel" destination="3Sj-rq-VN4" id="5pP-Zk-cjO"/>
+                        <outlet property="nameTextField" destination="2GL-T0-gIL" id="O0q-z1-t7Y"/>
+                        <outlet property="submitButton" destination="JNM-A8-SIg" id="x6C-Uc-yA8"/>
+                        <outlet property="thermoIDLabel" destination="tKQ-Cj-K0g" id="aXz-Wc-IKU"/>
+                        <outlet property="thermoIDTextField" destination="Vuj-Jo-qyK" id="Qff-ox-ssz"/>
+                        <outlet property="thermoLabelLabel" destination="usv-fJ-ybs" id="kMD-WP-Fvd"/>
+                        <outlet property="thermoLabelTextField" destination="gAE-wd-Z3Z" id="izU-hm-Ha6"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-156.52173913043478" y="59.510869565217398"/>
         </scene>
     </scenes>
 </document>
