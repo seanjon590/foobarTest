@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05256F5C1E6B27B300C95CE5 /* thermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F5B1E6B27B300C95CE5 /* thermostat.swift */; };
+		05256F5C1E6B27B300C95CE5 /* Thermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F5B1E6B27B300C95CE5 /* Thermostat.swift */; };
 		05256F5E1E6B36E900C95CE5 /* ThermostatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F5D1E6B36E900C95CE5 /* ThermostatTableViewCell.swift */; };
 		05256F601E6B3BBF00C95CE5 /* ThermostatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F5F1E6B3BBF00C95CE5 /* ThermostatTableViewController.swift */; };
 		05A42EAF1E5DF57D006386A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05A42EAE1E5DF57D006386A8 /* AppDelegate.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05256F5B1E6B27B300C95CE5 /* thermostat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = thermostat.swift; sourceTree = "<group>"; };
+		05256F5B1E6B27B300C95CE5 /* Thermostat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thermostat.swift; sourceTree = "<group>"; };
 		05256F5D1E6B36E900C95CE5 /* ThermostatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatTableViewCell.swift; sourceTree = "<group>"; };
 		05256F5F1E6B3BBF00C95CE5 /* ThermostatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatTableViewController.swift; sourceTree = "<group>"; };
 		05A42EAB1E5DF57D006386A8 /* NTA TEST 007.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NTA TEST 007.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,7 +107,7 @@
 				05A42EB01E5DF57D006386A8 /* ThermostatRegistrationViewController.swift */,
 				05256F5D1E6B36E900C95CE5 /* ThermostatTableViewCell.swift */,
 				05256F5F1E6B3BBF00C95CE5 /* ThermostatTableViewController.swift */,
-				05256F5B1E6B27B300C95CE5 /* thermostat.swift */,
+				05256F5B1E6B27B300C95CE5 /* Thermostat.swift */,
 				05A42EB71E5DF57D006386A8 /* LaunchScreen.storyboard */,
 				05A42EB21E5DF57D006386A8 /* Main.storyboard */,
 				05A42EB51E5DF57D006386A8 /* Assets.xcassets */,
@@ -268,7 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05256F5C1E6B27B300C95CE5 /* thermostat.swift in Sources */,
+				05256F5C1E6B27B300C95CE5 /* Thermostat.swift in Sources */,
 				05A42EB11E5DF57D006386A8 /* ThermostatRegistrationViewController.swift in Sources */,
 				05256F5E1E6B36E900C95CE5 /* ThermostatTableViewCell.swift in Sources */,
 				05A42EAF1E5DF57D006386A8 /* AppDelegate.swift in Sources */,
