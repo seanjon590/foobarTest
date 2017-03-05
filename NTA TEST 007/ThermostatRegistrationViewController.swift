@@ -1,5 +1,6 @@
 //
 //  ViewController.swift
+//  Controller for the main view 
 //  NTA TEST 007
 //
 //  Created by krizzly on 2/22/17.
@@ -8,10 +9,11 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITextFieldDelegate,
-UIImagePickerControllerDelegate,UINavigationControllerDelegate {
-    //MARK: boo booo'n?
+class ThermostatRegistrationViewController: UIViewController,UITextFieldDelegate,
+UIImagePickerControllerDelegate,UINavigationControllerDelegate
+{
     
+    //  Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var ThermoNameLabel: UILabel!
     

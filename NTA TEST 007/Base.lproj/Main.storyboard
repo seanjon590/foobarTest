@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Ya4-Zf-Qf4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -71,16 +71,10 @@
             </objects>
             <point key="canvasLocation" x="-900" y="60"/>
         </scene>
-        <!--View Controller-->
+        <!--Thermostat Registration View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <tapGestureRecognizer id="fYY-9h-vWk">
-                    <connections>
-                        <action selector="selectImageFromPhotoLibarary:" destination="BYZ-38-t0r" id="CJO-CQ-z3J"/>
-                    </connections>
-                </tapGestureRecognizer>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NTA_TEST_007" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ThermostatRegistrationViewController" customModule="NTA_TEST_007" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -89,45 +83,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="U61-Bx-4zB">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="U61-Bx-4zB">
                                 <rect key="frame" x="20" y="68" width="374" height="50"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THERMOSTAT NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Sj-rq-VN4">
-                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="20.333333333333336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="161.66666666666666" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter thermostat name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GL-T0-gIL">
-                                        <rect key="frame" x="0.0" y="20.333333333333332" width="200" height="29.999999999999996"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333329" width="200" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="wa4-Ij-s4Q"/>
+                                            <constraint firstAttribute="width" constant="200" id="n0b-y8-YQf"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="2GL-T0-gIL" secondAttribute="trailing" id="jeo-iq-FYQ"/>
-                                </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="71h-sj-3vw">
-                                <rect key="frame" x="20" y="136" width="200" height="50"/>
+                                <rect key="frame" x="20" y="135.66666666666663" width="200" height="50.333333333333343"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THERMOSTAT ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKQ-Cj-K0g">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="150" id="0AD-cw-RMN"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter thermostat ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vuj-Jo-qyK">
-                                        <rect key="frame" x="0.0" y="20" width="200" height="30"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333343" width="200" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="VQ6-TH-9d7"/>
+                                            <constraint firstAttribute="width" constant="200" id="2R5-ji-dS8"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -135,8 +123,7 @@
                                     </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Vuj-Jo-qyK" secondAttribute="trailing" id="Jun-Ty-QNp"/>
-                                    <constraint firstItem="Vuj-Jo-qyK" firstAttribute="top" secondItem="71h-sj-3vw" secondAttribute="top" constant="20" symbolic="YES" id="o8k-T2-Gk9"/>
+                                    <constraint firstAttribute="trailing" secondItem="tKQ-Cj-K0g" secondAttribute="trailing" constant="50" id="jpf-ZJ-CO0"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="REGISTER NEW THERMOSTAT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbW-Mv-exS">
@@ -146,24 +133,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNM-A8-SIg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNM-A8-SIg">
                                 <rect key="frame" x="20" y="265" width="125" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="125" id="geE-v3-hVp"/>
+                                </constraints>
                                 <state key="normal" title="Submit Info"/>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="4Hl-Qg-40N">
-                                <rect key="frame" x="20" y="207" width="200" height="50"/>
+                                <rect key="frame" x="20" y="207" width="200" height="50.333333333333314"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THERMOSTAT LABEL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usv-fJ-ybs">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="180" id="JhG-DI-6av"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter thermostat label" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gAE-wd-Z3Z">
-                                        <rect key="frame" x="0.0" y="20" width="200" height="30"/>
+                                        <rect key="frame" x="0.0" y="20.333333333333343" width="200" height="29.999999999999972"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="200" id="eCh-zW-YDp"/>
                                         </constraints>
@@ -172,21 +159,22 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="usv-fJ-ybs" secondAttribute="trailing" constant="20" symbolic="YES" id="bbN-h8-gzd"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.65404739969588355" blue="0.23607229803413021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="U61-Bx-4zB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="5Ms-kx-3cQ"/>
+                            <constraint firstItem="JNM-A8-SIg" firstAttribute="top" secondItem="4Hl-Qg-40N" secondAttribute="bottom" constant="8" symbolic="YES" id="0kQ-uJ-LlU"/>
+                            <constraint firstItem="U61-Bx-4zB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="48" id="5Ms-kx-3cQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="U61-Bx-4zB" secondAttribute="trailing" id="EqZ-sd-9Ly"/>
-                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="U61-Bx-4zB" secondAttribute="leading" id="GOg-Fx-Biz"/>
-                            <constraint firstItem="JNM-A8-SIg" firstAttribute="top" secondItem="4Hl-Qg-40N" secondAttribute="bottom" constant="8" symbolic="YES" id="Jj1-6Q-Hzd"/>
-                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="71h-sj-3vw" secondAttribute="leading" id="Nxb-nG-THQ"/>
-                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="JNM-A8-SIg" secondAttribute="leading" id="QVA-Hj-2uR"/>
-                            <constraint firstAttribute="bottom" secondItem="4Hl-Qg-40N" secondAttribute="bottom" constant="479" id="Z6j-yd-CGr"/>
-                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="top" secondItem="71h-sj-3vw" secondAttribute="bottom" constant="21" id="g6y-Me-VDx"/>
-                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="207" id="je5-nX-0Kz"/>
-                            <constraint firstAttribute="trailing" secondItem="4Hl-Qg-40N" secondAttribute="trailing" constant="230" id="nlX-cf-myv"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="top" secondItem="71h-sj-3vw" secondAttribute="bottom" constant="21" id="Yza-0l-chQ"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="71h-sj-3vw" secondAttribute="leading" id="eFT-6L-Ues"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="leading" secondItem="U61-Bx-4zB" secondAttribute="leading" id="gde-NW-Vyw"/>
+                            <constraint firstItem="4Hl-Qg-40N" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="207" id="tyK-7X-no4"/>
                             <constraint firstItem="U61-Bx-4zB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wPq-vR-h2U"/>
+                            <constraint firstItem="JNM-A8-SIg" firstAttribute="leading" secondItem="4Hl-Qg-40N" secondAttribute="leading" id="zNv-rJ-f1d"/>
                         </constraints>
                     </view>
                     <connections>
@@ -199,6 +187,12 @@
                         <outlet property="thermoLabelTextField" destination="gAE-wd-Z3Z" id="izU-hm-Ha6"/>
                     </connections>
                 </viewController>
+                <tapGestureRecognizer id="fYY-9h-vWk">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibarary:" destination="BYZ-38-t0r" id="CJO-CQ-z3J"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156.52173913043478" y="59.510869565217398"/>
         </scene>
