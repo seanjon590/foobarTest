@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0510B8671E6DC72000255C27 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0510B8661E6DC72000255C27 /* Report.swift */; };
 		05256F5C1E6B27B300C95CE5 /* Thermostat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F5B1E6B27B300C95CE5 /* Thermostat.swift */; };
 		05256F5E1E6B36E900C95CE5 /* ThermostatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F5D1E6B36E900C95CE5 /* ThermostatTableViewCell.swift */; };
 		05256F601E6B3BBF00C95CE5 /* ThermostatTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05256F5F1E6B3BBF00C95CE5 /* ThermostatTableViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0510B8661E6DC72000255C27 /* Report.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
 		05256F5B1E6B27B300C95CE5 /* Thermostat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thermostat.swift; sourceTree = "<group>"; };
 		05256F5D1E6B36E900C95CE5 /* ThermostatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatTableViewCell.swift; sourceTree = "<group>"; };
 		05256F5F1E6B3BBF00C95CE5 /* ThermostatTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThermostatTableViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				05256F5D1E6B36E900C95CE5 /* ThermostatTableViewCell.swift */,
 				05256F5F1E6B3BBF00C95CE5 /* ThermostatTableViewController.swift */,
 				05256F5B1E6B27B300C95CE5 /* Thermostat.swift */,
+				0510B8661E6DC72000255C27 /* Report.swift */,
 				05A42EB71E5DF57D006386A8 /* LaunchScreen.storyboard */,
 				05A42EB21E5DF57D006386A8 /* Main.storyboard */,
 				05A42EB51E5DF57D006386A8 /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 				05256F5E1E6B36E900C95CE5 /* ThermostatTableViewCell.swift in Sources */,
 				05A42EAF1E5DF57D006386A8 /* AppDelegate.swift in Sources */,
 				05256F601E6B3BBF00C95CE5 /* ThermostatTableViewController.swift in Sources */,
+				0510B8671E6DC72000255C27 /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
